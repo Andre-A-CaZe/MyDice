@@ -16,8 +16,8 @@ class _MyDicesState extends State<MyDices> {
     setState(() {
       int selection = Random().nextInt(6) + 1;
       one = 'assets/img/dice$selection.png';
-      int selection1 = Random().nextInt(6) + 1;
-      two = 'assets/img/dice$selection1.png';
+      selection = Random().nextInt(6) + 1;
+      two = 'assets/img/dice$selection.png';
     });
   }
 
