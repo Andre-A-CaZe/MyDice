@@ -13,12 +13,12 @@ class _MyDicesState extends State<MyDices> {
   @override
   Widget build(BuildContext context) {
     return Row(children: [
-      Dado(Random().nextInt(6) + 1),
-      Dado(Random().nextInt(6) + 1)
+      dado(Random().nextInt(6) + 1),
+      dado(Random().nextInt(6) + 1)
     ]);
   }
 
-  Expanded Dado(valorDado) {
+  Expanded dado(valorDado) {
     return Expanded(
       child: TextButton(
         onPressed: () {
